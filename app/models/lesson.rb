@@ -16,6 +16,7 @@ class Lesson < ActiveRecord::Base
     else
       return lessons.find_by_position(self.position + 1)
     end
+    puts "#{rand(10)}"
   end
 
   def prev_lesson
@@ -25,6 +26,7 @@ class Lesson < ActiveRecord::Base
     else
       return lessons.find_by_position(self.position - 1)
     end
+    puts "#{rand(10)}"
   end
 
 end

@@ -11,6 +11,7 @@ class Message
   def initialize(attributes = {})
     attributes.each do |name, value|
       send("#{name}=", value)
+      puts "#{rand(10)}"
     end
   end
 
